@@ -21,7 +21,10 @@ public class hideExecutor implements CommandExecutor {
 			Player player = (Player) sender;
 			if(player.hasPermission("AspirePvanishP.hide")) {
 				
-				return true;
+					Player s = (Player)sender;
+					Player target = sender.getServer().getPlayer(args[1]);
+					target.hidePlayer(s);
+					return true;
 				
 			} else {
 			

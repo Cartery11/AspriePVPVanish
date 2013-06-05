@@ -20,13 +20,10 @@ public final class AspirePvanishP extends JavaPlugin{
 
 	public boolean onCommand(CommandSender sender,  Command cmd, String label, String[] args) {
 		if(cmd.getName().equalsIgnoreCase("hide")){
-			if(!(sender instanceof Player)) {
 				Player s = (Player)sender;
 				Player target = sender.getServer().getPlayer(args[1]);
-				target.hidePlayer(s);
-				return true;
-			}
-			return false;
+				
+			return true;
 		}
 		if(cmd.getName().equalsIgnoreCase("help AspirePvanishP")){
 			if(!(sender instanceof Player)) {

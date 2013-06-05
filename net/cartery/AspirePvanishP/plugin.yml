@@ -1,0 +1,11 @@
+name: AspirePvanishP
+main: net.cartery
+version 0.5
+
+commands:
+  hide:
+    description: Hides you from everyone.
+    usage: /hide]
+    default: op
+    permission: AspirePvanishP.vanish
+    permission-message: You do not have enough permissions.
